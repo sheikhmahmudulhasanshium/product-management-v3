@@ -2,6 +2,7 @@ import { Menu, Search } from "lucide-react";
 import { ScrollArea, ScrollBar } from "../ui/scroll-area";
 import { Button } from "../ui/button";
 import { ModeToggle } from "../menu-toggle";
+import NavigationCategories from "./navigation-categories";
 
 const NavigationMenubar = async() => {
     return (
