@@ -11,7 +11,7 @@ const MainLayout =async ({children}:{children:React.ReactNode}) => {
             <Header/>
             <NavigationMenubar/>
 
-            <main className=" md:pl-[72px]">
+            <main className="">
                 {children}
             </main>
             {/**Footer */}
