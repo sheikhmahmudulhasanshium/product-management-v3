@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import NavigationMenubar from "@/components/navigation/navigation-menubar";
+import {NavigationMenubar} from "@/components/navigation/navigation-menubar";
 import React from "react";
 
 const MainLayout =async ({children}:{children:React.ReactNode}) => {
@@ -11,7 +11,7 @@ const MainLayout =async ({children}:{children:React.ReactNode}) => {
             <Header/>
             <NavigationMenubar/>
 
-            <main className="">
+            <main className="" suppressHydrationWarning>
                 {children}
             </main>
             {/**Footer */}

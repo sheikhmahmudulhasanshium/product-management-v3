@@ -1,20 +1,23 @@
 "use client"
-
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "../ui/navigation-menu";
+import { Button } from "../ui/button";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "../ui/dropdown-menu";
 
 const NavigationCategories = () => {
     return ( 
-<NavigationMenu className="flex">
-  <NavigationMenuList>
-    <NavigationMenuItem className="bg-green-600 dark:bg-green-400">
-      <NavigationMenuTrigger>Categories</NavigationMenuTrigger>
-      <NavigationMenuContent className="absolute w-full top-25 from-green-400 to-blue-400 ">
-        <NavigationMenuLink>Link</NavigationMenuLink>
-      </NavigationMenuContent>
-    </NavigationMenuItem>
-  </NavigationMenuList>
-</NavigationMenu>
-
+        <DropdownMenu>
+            <DropdownMenuTrigger  className="border-0  hover:border-0">
+                <Button variant="ghost" >Categories </Button>
+            </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                    {/*<DropdownMenuLabel>Categories</DropdownMenuLabel>*/}
+                        <DropdownMenuSeparator />
+                        <DropdownMenuItem>Category 1</DropdownMenuItem>
+                        <DropdownMenuItem>Category 1</DropdownMenuItem>
+                        <DropdownMenuItem>Category 1</DropdownMenuItem>
+                        <DropdownMenuItem>Category 1</DropdownMenuItem>
+                </DropdownMenuContent>
+        
+        </DropdownMenu>
      );
 }
  
